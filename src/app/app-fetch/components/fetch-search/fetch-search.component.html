@@ -1,0 +1,89 @@
+<div class="upper-wrapper" fxLayout="row" fxLayoutAlign="space-around center">
+
+  <div class="img">
+    <img class="api-img" src="assets/weather-api.jpg">
+    <!--<img class="api-img" src="assets/night.jpeg">-->
+  </div>
+
+  <div class="nav-bar" fxLayout="row" fxLayoutAlign="space-between center">
+
+    <div class="nav-header">
+      <h1>WeatherApp</h1>
+    </div>
+
+    <div class="nav-option">
+      <ul fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="55px">
+        <li>
+          <a routerLink="/blog" routerLinkActive="active">About Us</a>
+        </li>
+        <li>
+          <a routerLink="/blog" routerLinkActive="active">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="introduction">
+    <p>Something about the website</p>
+  </div>
+
+  <div class="search-box" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="5px">
+
+    <div>
+      <mat-form-field class="example-full-width" appearance="fill" style="width: 800px; height: 1px" >
+        <mat-label style="font-size: 20px">Search a city</mat-label>
+        <textarea style="font-size: 20px" matInput placeholder="Ex. Bangladesh..." [(ngModel)]="cityName"></textarea>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <button style="top:6px; height: 75px ; width: 220px;" mat-raised-button
+              (click)="buttonClicked(cityName)">
+        <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="25px">
+
+          <mat-icon style="font-size: 55px; height: 50px">search</mat-icon>
+          <p style="font-size: 45px;">Search</p>
+        </div>
+      </button>
+    </div>
+
+
+  </div>
+
+  <!--<div fxLayout="column" fxLayoutAlign="space-between center">
+    <p>something about the site</p>
+    <div class="search-box" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="5px">
+
+    </div>
+    <p>{{(temperature - 273.15).toFixed(0)}}°C</p>
+    <p>{{cityName}}</p>
+  </div>-->
+
+</div>
+
+<!--<div class="lower-wrapper">
+
+  <div class="report">
+    <div>
+      <p>Today's report</p>
+    </div>
+
+    <div>
+      <p>date and time</p>
+    </div>
+  </div>
+
+  <div class="details">
+
+    <div class="left-details">
+
+    </div>
+
+    <div class="right-details">
+
+    </div>
+
+  </div>
+
+</div>-->

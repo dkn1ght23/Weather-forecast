@@ -1,0 +1,61 @@
+.upper-wrapper .img .api-img{
+  width: 100%;
+}
+
+.upper-wrapper .nav-bar{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  //padding: 40px;
+}
+
+.upper-wrapper .nav-bar .nav-header{
+  //border: 1px solid red;
+  padding-top: 50px;
+  padding-left: 150px;
+}
+
+.upper-wrapper .nav-bar .nav-option{
+  //border: 1px solid red;
+  padding-top: 50px;
+  padding-right: 150px;
+}
+
+.upper-wrapper .nav-bar .nav-option > ul > li{
+  font-size: 30px;
+  list-style: none;
+}
+
+.upper-wrapper .nav-bar .nav-option a{
+  text-decoration: none;
+  color: black;
+}
+
+.upper-wrapper .introduction{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  //width: 100%;
+  //margin-left: 45%;
+  margin-top: 20%;
+  border: 1px solid red;
+
+  p{
+    font-size: 50px;
+    //margin-left: 35%;
+  }
+}
+
+.upper-wrapper .search-box{
+  //border: 1px solid red;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  //margin-left: 5%;
+  margin-top: 25%;
+}
+
+mat-form-field{
+  //: 1px solid red;
+}

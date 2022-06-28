@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API_KEY: '3a47a6d8adef6c84f5252f8e5cc569b0',
+  API_URL: 'https://api.openweathermap.org/data/2.5/'
 };
 
 /*

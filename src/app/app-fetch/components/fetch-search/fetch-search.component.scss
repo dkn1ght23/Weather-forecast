@@ -1,45 +1,42 @@
-.upper-wrapper .img .api-img{
+.wrapper .img .api-img{
   width: 100%;
 }
 
-.upper-wrapper .nav-bar{
+.wrapper .nav-bar{
   position: absolute;
   z-index: 1;
   top: 0;
   width: 100%;
-  //padding: 40px;
 }
 
-.upper-wrapper .nav-bar .nav-header{
+.wrapper .nav-bar .nav-header{
   //border: 1px solid red;
   padding-top: 50px;
   padding-left: 150px;
 }
 
-.upper-wrapper .nav-bar .nav-option{
+.wrapper .nav-bar .nav-option{
   //border: 1px solid red;
   padding-top: 50px;
   padding-right: 150px;
 }
 
-.upper-wrapper .nav-bar .nav-option > ul > li{
+.wrapper .nav-bar .nav-option > ul > li{
   font-size: 30px;
   list-style: none;
 }
 
-.upper-wrapper .nav-bar .nav-option a{
+.wrapper .nav-bar .nav-option a{
   text-decoration: none;
   color: black;
 }
 
-.upper-wrapper .introduction{
+.wrapper .introduction{
   position: absolute;
   z-index: 1;
   top: 0;
-  //width: 100%;
-  //margin-left: 45%;
   margin-top: 20%;
-  border: 1px solid red;
+  //border: 1px solid red;
 
   p{
     font-size: 50px;
@@ -47,7 +44,7 @@
   }
 }
 
-.upper-wrapper .search-box{
+.wrapper .search-box{
   //border: 1px solid red;
   position: absolute;
   z-index: 1;
@@ -56,6 +53,31 @@
   margin-top: 25%;
 }
 
-mat-form-field{
-  //: 1px solid red;
+.wrapper .search-box .mat-form-field{
+  width: 800px;
+  height: 1px;
+}
+
+.wrapper .search-box .mat-form-field .mat-label{
+  font-size: 20px;
+}
+
+.wrapper .search-box .mat-form-field .mat-label .text-area{
+  font-size: 20px;
+}
+
+.wrapper .search-box .search-button{
+  top:6px;
+  height: 75px;
+  width: 220px;
+
+  mat-icon{
+    font-size: 55px;
+    height: 50px;
+  }
+
+  p{
+    font-size: 45px;
+  }
+
 }

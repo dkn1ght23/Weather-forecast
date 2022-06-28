@@ -9,15 +9,18 @@ import {FlexModule} from "@angular/flex-layout";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import { FetchSearchComponent } from './components/fetch-search/fetch-search.component';
+import { FetchDetailsComponent } from './components/fetch-details/fetch-details.component';
 
 @NgModule({
     declarations: [
         FetchDefaultComponent,
-        FetchSearchComponent
+        FetchSearchComponent,
+      FetchDetailsComponent
     ],
   exports: [
     FetchDefaultComponent,
-    FetchSearchComponent
+    FetchSearchComponent,
+    FetchDetailsComponent
   ],
     imports: [
         CommonModule,

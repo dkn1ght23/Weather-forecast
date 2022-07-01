@@ -13,6 +13,8 @@ export class FetchDetailsComponent implements OnInit {
   @Input() temperature: any
   @Input() cityName: any
 
+  date = new Date();
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,7 +1,49 @@
-<p>fetch-details works!</p>
+<div class="wrapper" fxLayout="column" id="search-details">
 
-<div style="width: 100%; background-color: pink">
+  <div class="report" fxLayout="row" fxLayoutAlign="space-around center">
+    <div class="heading">
+      <p>Today's report</p>
+    </div>
+
+    <div class="date-time" fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="5px">
+      <p class="date">{{date | date:'mediumDate'}}</p>
+      <p class="time">{{date | date:'shortTime'}}</p>
+    </div>
+  </div>
+
+  <div class="details" fxLayout="row" fxLayoutAlign="space-around center">
+
+    <div class="left-details">
+      <mat-card fxLayout="column" fxLayoutAlign="space-around center">
+        <!--<p style="font-size: 50px">{{cityName}}</p>
+        <p style="font-size: 50px">{{(temperature - 273.15).toFixed(0)}}°C</p>
+      -->
+        <p>Sylhet</p>
+        <p>50°C</p>
+      </mat-card>
+    </div>
+
+    <div class="right-details">
+      <mat-card fxLayout="column" fxLayoutAlign="space-around center">
+        <div class="right-top" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="15px">
+          <p>18°C</p>
+          <p>38°C</p>
+        </div>
+
+        <div class="right-bottom" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="15px">
+          <p>Humidity</p>
+          <p>Wind</p>
+        </div>
+      </mat-card>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!--<div style="width: 100%; background-color: pink">
   <p style="font-size: 50px">{{(temperature - 273.15).toFixed(0)}}°C</p>
   <p style="font-size: 50px">{{cityName}}</p>
-</div>
+</div>-->
 

@@ -7,40 +7,40 @@
   z-index: 1;
   top: 0;
   width: 100%;
+  //border: 1px solid red;
 }
 
 .wrapper .nav-bar .nav-header{
+  margin-top: 50px;
+  margin-left: 150px;
   //border: 1px solid red;
-  padding-top: 50px;
-  padding-left: 150px;
 }
 
 .wrapper .nav-bar .nav-option{
   //border: 1px solid red;
-  padding-top: 50px;
-  padding-right: 150px;
+  margin-top: 50px;
+  margin-right: 150px;
 }
 
 .wrapper .nav-bar .nav-option > ul > li{
   font-size: 30px;
   list-style: none;
+ //border: 1px solid red;
 }
 
 .wrapper .nav-bar .nav-option a{
   text-decoration: none;
   color: black;
 }
-
-.wrapper .introduction{
+ .introduction{
+  color: #F7DCB4;
   position: absolute;
   z-index: 1;
   top: 0;
   margin-top: 20%;
-  //border: 1px solid red;
 
   p{
     font-size: 50px;
-    //margin-left: 35%;
   }
 }
 
@@ -49,7 +49,6 @@
   position: absolute;
   z-index: 1;
   top: 0;
-  //margin-left: 5%;
   margin-top: 25%;
 }
 
@@ -60,11 +59,20 @@
 
 .wrapper .search-box .mat-form-field .mat-label{
   font-size: 20px;
+  color: burlywood;
 }
 
-.wrapper .search-box .mat-form-field .mat-label .text-area{
+::placeholder {
+  color: burlywood;
+  opacity: 1; /* Firefox */
   font-size: 20px;
 }
+
+.wrapper .search-box .mat-form-field .text-area{
+  font-size: 25px;
+  color: burlywood;
+}
+
 
 .wrapper .search-box .search-button{
   top:6px;

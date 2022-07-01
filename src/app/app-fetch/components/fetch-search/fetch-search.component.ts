@@ -24,7 +24,7 @@ export class FetchSearchComponent implements OnInit {
       console.log(response);
       this.weatherReport = response["main"];
       this.temperature = this.weatherReport.temp;
-      //console.log(this.weatherReport);
+      console.log(this.weatherReport);
       //this.name = response['name'];
       //console.log(this.name);
     })

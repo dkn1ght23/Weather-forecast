@@ -13,29 +13,52 @@
 
   <div class="details" fxLayout="row" fxLayoutAlign="space-around center">
 
-    <div class="left-details">
-      <mat-card fxLayout="column" fxLayoutAlign="space-around center">
+      <mat-card fxLayout="column" fxLayoutAlign="space-evenly center">
         <!--<p style="font-size: 50px">{{cityName}}</p>
         <p style="font-size: 50px">{{(temperature - 273.15).toFixed(0)}}°C</p>
       -->
-        <p>Sylhet</p>
-        <p>50°C</p>
-      </mat-card>
-    </div>
+        <div>
+          <p>Sylhet</p>
+        </div>
 
-    <div class="right-details">
+        <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="50px">
+          <p>50°C</p>
+          <img style="width: 100px" src="assets/cloud-img.png">
+        </div>
+
+      </mat-card>
+
+
       <mat-card fxLayout="column" fxLayoutAlign="space-around center">
-        <div class="right-top" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="15px">
-          <p>18°C</p>
-          <p>38°C</p>
+
+        <div style="width: 100%; border: 1px solid red" class="right-top" fxLayout="row" fxLayoutAlign="space-around center">
+
+          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
+            <img style="width: 35px" src="assets/cold.png">
+            <p>18°C</p>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
+            <img style="width: 35px" src="assets/hot.png">
+            <p>38°C</p>
+          </div>
+
         </div>
 
-        <div class="right-bottom" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="15px">
-          <p>Humidity</p>
-          <p>Wind</p>
+        <div style="width: 100%; border: 1px solid red" class="right-bottom" fxLayout="row" fxLayoutAlign="space-around center">
+
+          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
+            <img style="width: 35px" src="assets/humidity.png">
+            <p>Humidity</p>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
+            <img style="width: 35px" src="assets/autumn.png">
+            <p>Wind</p>
+          </div>
+
         </div>
       </mat-card>
-    </div>
 
   </div>
 

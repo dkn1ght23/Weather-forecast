@@ -1,4 +1,5 @@
 .wrapper{
+  height: 800px;
   background-color: #9C9F84;
 }
 
@@ -7,7 +8,7 @@
 }
 
 .wrapper .report .heading{
-
+  font-size: 45px;
 }
 
 .wrapper .report .date-time{
@@ -17,4 +18,18 @@
   .time{
     font-size: 25px;
   }
+}
+
+.wrapper .details mat-card{
+  margin: 50px;
+  border: 1px solid red;
+  width: 700px;
+  height: 600px;
+  background-color: #F7DCB4;
+
+  border-radius: 15px;
+}
+
+.wrapper .details mat-card p{
+  font-size: 40px;
 }

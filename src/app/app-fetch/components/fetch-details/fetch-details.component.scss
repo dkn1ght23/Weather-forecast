@@ -20,16 +20,63 @@
   }
 }
 
-.wrapper .details mat-card{
+.wrapper .details .mat-left{
   margin: 50px;
-  border: 1px solid red;
   width: 700px;
   height: 600px;
   background-color: #F7DCB4;
-
   border-radius: 15px;
 }
 
-.wrapper .details mat-card p{
-  font-size: 40px;
+.wrapper .details .mat-left .left-top{
+  //border: 1px solid red;
+  width: 100%;
+  text-transform: uppercase;
+
+  .city-name{
+    font-size: 60px;
+  }
+}
+
+.wrapper .details .mat-left .left-bottom{
+  //border: 1px solid red;
+  width: 100%;
+  .temp{
+    font-size: 60px;
+  }
+  img{
+    width: 250px;
+  }
+}
+
+.wrapper .details .mat-right{
+  margin: 50px;
+  width: 700px;
+  height: 600px;
+  background-color: #F7DCB4;
+  border-radius: 15px;
+}
+
+.wrapper .details .mat-right .right-top{
+  border: 1px solid red;
+  width: 100%;
+
+  .temp-type-img{
+    width: 50px;
+  }
+  .temp-text{
+    font-size: 50px;
+  }
+}
+
+.wrapper .details .mat-right .right-bottom{
+  border: 1px solid red;
+  width: 100%;
+
+  .temp-type-img{
+    width: 50px;
+  }
+  .temp-text{
+    font-size: 50px;
+  }
 }

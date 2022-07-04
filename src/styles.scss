@@ -27,6 +27,7 @@ $my-theme: mat.define-light-theme((
 
 html{
   font-family: "Lato", "Open Sans";
+  scroll-behavior: smooth;
 }
 
 body{

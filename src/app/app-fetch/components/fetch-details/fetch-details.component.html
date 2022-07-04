@@ -13,51 +13,47 @@
 
   <div class="details" fxLayout="row" fxLayoutAlign="space-around center">
 
-      <mat-card fxLayout="column" fxLayoutAlign="space-evenly center">
-        <!--<p style="font-size: 50px">{{cityName}}</p>
-        <p style="font-size: 50px">{{(temperature - 273.15).toFixed(0)}}°C</p>
-      -->
-        <div>
-          <p style="font-size: 50px">{{cityName}}</p>
+      <mat-card class="mat-left" fxLayout="column" fxLayoutAlign="space-evenly center">
+        <div class="left-top" fxLayout="row" fxLayoutAlign="space-evenly center">
+          <p class="city-name">{{cityName}}</p>
+          <!--<mat-icon class="location-icon">location_on</mat-icon>-->
         </div>
 
-        <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="50px">
-          <p style="font-size: 50px">{{(temperature - 273.15).toFixed(0)}}°C</p>
-          <img style="border: 1px solid red; width: 50px" [src]="weatherIcon">
+        <div class="left-bottom" fxLayout="row" fxLayoutAlign="space-evenly center">
+          <p class="temp" style="font-size: 50px">{{(temperature - 273.15).toFixed(0)}}°C</p>
+          <img [src]="weatherIcon">
         </div>
-
       </mat-card>
 
+      <mat-card class="mat-right" fxLayout="column" fxLayoutAlign="space-around center">
 
-      <mat-card fxLayout="column" fxLayoutAlign="space-around center">
+        <div class="right-top" fxLayout="row" fxLayoutAlign="space-around center">
 
-        <div style="width: 100%; border: 1px solid red" class="right-top" fxLayout="row" fxLayoutAlign="space-around center">
-
-          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
-            <img style="width: 35px" src="assets/cold.png">
-            <p style="font-size: 50px">{{(minTemp - 273.15).toFixed(0)}}°C</p>
+          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="20px">
+            <img class="temp-type-img" src="assets/cold.png">
+            <p class="temp-text">{{(minTemp - 273.15).toFixed(0)}}°C</p>
           </div>
 
-          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
-            <img style="width: 35px" src="assets/hot.png">
-            <p style="font-size: 50px">{{(maxTemp - 273.15).toFixed(0)}}°C</p>
-          </div>
-
-        </div>
-
-        <div style="width: 100%; border: 1px solid red" class="right-bottom" fxLayout="row" fxLayoutAlign="space-around center">
-
-          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
-            <img style="width: 35px" src="assets/humidity.png">
-            <p>{{humidity}}%</p>
-          </div>
-
-          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
-            <img style="width: 35px" src="assets/autumn.png">
-            <p>{{wind}} km/h</p>
+          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="20px">
+            <img class="temp-type-img" src="assets/hot.png">
+            <p class="temp-text">{{(maxTemp - 273.15).toFixed(0)}}°C</p>
           </div>
 
         </div>
+
+        <div class="right-bottom" fxLayout="row" fxLayoutAlign="space-around center">
+
+          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="20px">
+            <img class="temp-type-img" src="assets/humidity.png">
+            <p class="temp-text">{{humidity}}%</p>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="20px">
+            <img class="temp-type-img" src="assets/autumn.png">
+            <p class="temp-text">{{wind}} km/h</p>
+          </div>
+        </div>
+
       </mat-card>
 
   </div>

@@ -1,4 +1,4 @@
-import {Component, OnInit, Input, Injectable} from '@angular/core';
+import {Component, OnInit, Input, Injectable, OnChanges, SimpleChanges} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -9,23 +9,35 @@ import {Component, OnInit, Input, Injectable} from '@angular/core';
   templateUrl: './fetch-details.component.html',
   styleUrls: ['./fetch-details.component.scss']
 })
-export class FetchDetailsComponent implements OnInit {
+export class FetchDetailsComponent implements OnInit, OnChanges {
 
-  @Input() temperature: any
-  @Input() cityName: any
+  @Input()  temperature: any
+  @Input()  cityName: any
+  @Input()  iconName: any
+  @Input()  maxTemp: any
+  @Input()  minTemp: any
+  @Input()  humidity: any
+  @Input()  wind: any
 
   weatherIcon: any
-
   date = new Date();
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
   }
 
-  iconCall(icon: any){
-    console.log(icon);
-    this.weatherIcon = `http://openweathermap.org/img/wn/${icon}@4x.png`;
+  ngOnChanges(changes: SimpleChanges): void {
+        this.iconCall();
+    }
+
+  ngOnInit(): void {
+    this.iconCall();
+  }
+
+  iconCall() {
+    if(!this.iconName){
+      return;
+    }
+    this.weatherIcon = `http://openweathermap.org/img/wn/${this.iconName}@4x.png`;
     console.log(this.weatherIcon);
   }
 

@@ -18,11 +18,11 @@
         <p style="font-size: 50px">{{(temperature - 273.15).toFixed(0)}}°C</p>
       -->
         <div>
-          <p>Sylhet</p>
+          <p style="font-size: 50px">{{cityName}}</p>
         </div>
 
         <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="50px">
-          <p>50°C</p>
+          <p style="font-size: 50px">{{(temperature - 273.15).toFixed(0)}}°C</p>
           <img style="border: 1px solid red; width: 50px" [src]="weatherIcon">
         </div>
 
@@ -35,12 +35,12 @@
 
           <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
             <img style="width: 35px" src="assets/cold.png">
-            <p>18°C</p>
+            <p style="font-size: 50px">{{(minTemp - 273.15).toFixed(0)}}°C</p>
           </div>
 
           <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
             <img style="width: 35px" src="assets/hot.png">
-            <p>38°C</p>
+            <p style="font-size: 50px">{{(maxTemp - 273.15).toFixed(0)}}°C</p>
           </div>
 
         </div>
@@ -49,12 +49,12 @@
 
           <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
             <img style="width: 35px" src="assets/humidity.png">
-            <p>Humidity</p>
+            <p>{{humidity}}%</p>
           </div>
 
           <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
             <img style="width: 35px" src="assets/autumn.png">
-            <p>Wind</p>
+            <p>{{wind}} km/h</p>
           </div>
 
         </div>

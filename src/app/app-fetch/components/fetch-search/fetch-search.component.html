@@ -1,56 +1,58 @@
 <div class="wrapper" fxLayout="row" fxLayoutAlign="space-around center">
 
-  <div class="img">
-    <img class="api-img" src="assets/weather-front1.jpg">
-  </div>
+  <div class="left" fxLayout="column" fxLayoutAlign="space-evenly center">
 
-  <div class="nav-bar" fxLayout="row" fxLayoutAlign="space-between center">
+    <div class="typo">
 
-    <div class="nav-header">
-      <h1>WeatherApp</h1>
     </div>
 
+    <div class="svg" fxLayout="column" fxLayoutAlign="space-evenly center">
+      <img src="assets/weather.svg">
+    </div>
+
+  </div>
+
+  <div class="right" fxLayout="column" fxLayoutAlign=" center">
+
     <div class="nav-option">
-      <ul fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="55px">
-        <li>
-          <a routerLink="/blog" routerLinkActive="active">About Us</a>
+      <ul fxLayout="row" fxLayoutAlign="center" fxLayoutGap="55px">
+        <li fxLayout="row" fxLayoutAlign="center center">
+          <a routerLink="/blog" routerLinkActive="active">ABOUT US</a>
         </li>
-        <li>
-          <a routerLink="/blog" routerLinkActive="active">Contact Us</a>
+        <li fxLayout="row" fxLayoutAlign="center center">
+          <a routerLink="/blog" routerLinkActive="active">CONTACT US</a>
         </li>
       </ul>
     </div>
 
-  </div>
-
-  <div class="introduction">
-    <p>Something about the website</p>
-  </div>
-
-  <div class="search-box" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="5px">
-
-    <div>
-      <mat-form-field class="mat-form-field" appearance="fill">
-        <mat-label class="mat-label">Search a city</mat-label>
-        <textarea class="text-area" matInput placeholder="Ex. Bangladesh..." [(ngModel)]="cityName"></textarea>
-      </mat-form-field>
+    <div class="headline"  fxLayout="column" fxLayoutAlign=" center" fxLayoutGap="20px">
+      <p class="introduction1">Weather Forecast</p>
+      <p class="introduction2">Find the update and make your day easier</p>
     </div>
 
-    <div>
-      <a href="#search-details">
-        <button class="search-button" mat-raised-button (click)="buttonClicked(cityName)">
+    <div class="search-box" fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="5px">
 
-          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="25px">
+      <div>
+        <mat-form-field class="mat-form-field" appearance="fill">
+          <mat-label class="mat-label">Search a city</mat-label>
+          <textarea class="text-area" matInput placeholder="Ex. Bangladesh..." [(ngModel)]="cityName"></textarea>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <a href="#search-details">
+          <button class="search-button" mat-raised-button
+                  fxLayoutAlign="row" fxLayoutAlign="center center"
+                  (click)="buttonClicked(cityName)">
             <mat-icon>search</mat-icon>
-            <p>Search</p>
-          </div>
+          </button>
+        </a>
+      </div>
 
-        </button>
-      </a>
     </div>
 
-
   </div>
+
 </div>
 
 <app-fetch-details
@@ -60,7 +62,5 @@
   [minTemp] = "minTemp"
   [maxTemp] = "maxTemp"
   [humidity] = "humidity"
-  [wind] = "wind"
->
-
+  [wind] = "wind">
 </app-fetch-details>

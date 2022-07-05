@@ -1,10 +1,12 @@
 .wrapper{
-  height: 800px;
-  background-color: #9C9F84;
+  height: 700px;
+  background-color: #2C5D87;
+  //textColor: #FDAE38
+  //textColor: #FFB955
 }
 
 .wrapper .report{
-  border: 1px solid red;
+  //border: 1px solid red;
 }
 
 .wrapper .report .heading{
@@ -22,9 +24,9 @@
 
 .wrapper .details .mat-left{
   margin: 50px;
-  width: 700px;
-  height: 600px;
-  background-color: #F7DCB4;
+  width: 600px;
+  height: 500px;
+  background-color: #4FA3A5;
   border-radius: 15px;
 }
 
@@ -51,14 +53,14 @@
 
 .wrapper .details .mat-right{
   margin: 50px;
-  width: 700px;
-  height: 600px;
-  background-color: #F7DCB4;
+  width: 600px;
+  height: 500px;
+  background-color: #4FA3A5;
   border-radius: 15px;
 }
 
 .wrapper .details .mat-right .right-top{
-  border: 1px solid red;
+  //border: 1px solid red;
   width: 100%;
 
   .temp-type-img{
@@ -70,7 +72,7 @@
 }
 
 .wrapper .details .mat-right .right-bottom{
-  border: 1px solid red;
+  //border: 1px solid red;
   width: 100%;
 
   .temp-type-img{

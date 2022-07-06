@@ -8,7 +8,7 @@
     width: 55%;
     height: 800px;
     //background-color: #aed6dc;
-    background-color: #383838;
+    background-color: #FEF9EF;
   }
 }
 
@@ -31,7 +31,7 @@
   list-style: none;
   a{
     text-decoration: none;
-    color: burlywood;
+    color: #383838;
   }
 }
 
@@ -42,12 +42,12 @@
   .introduction1{
     //for typo
     //color: darkslategray;
-    color: burlywood;
+    color: #383838;
     font-size: 50px;
   }
   .introduction2{
     font-size: 25px;
-    color: burlywood;
+    color: #383838;
   }
 }
 
@@ -63,32 +63,32 @@
 
 .wrapper .right .search-box .mat-form-field .mat-label{
   font-size: 20px;
-  color: burlywood;
+  color: #383838;
 }
 
 ::placeholder {
-  color: burlywood;
+  color: #383838;
   opacity: 1;
   font-size: 20px;
 }
 
 .wrapper .right .search-box .mat-form-field .text-area{
   font-size: 25px;
-  color: burlywood;
+  color: #383838;
 }
 
 .wrapper .right .search-box  .search-button{
   top:6px;
   height: 90px;
   width: 100px;
-  background-color: #383838;
+  background-color: #FEF9EF;
   border-radius: 10px;
-  border: 3px solid burlywood;
+  border: 3px solid #383838;
 
   mat-icon{
     font-size: 70px;
     height: 60px;
     margin-right: 35px;
-    color: burlywood;
+    color: #383838;
   }
 }

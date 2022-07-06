@@ -1,24 +1,26 @@
 .wrapper{
   height: 700px;
-  background-color: #2C5D87;
+  height: 800px;
+  background-color: #383838;
   //textColor: #FDAE38
   //textColor: #FFB955
 }
 
 .wrapper .report{
   //border: 1px solid red;
+  margin-top: 3%;
+  //padding-top: 2%;
 }
 
 .wrapper .report .heading{
-  font-size: 45px;
+  font-size: 50px;
+  color: white;
 }
 
 .wrapper .report .date-time{
   .date{
+    color: white;
     font-size: 35px;
-  }
-  .time{
-    font-size: 25px;
   }
 }
 
@@ -26,7 +28,7 @@
   margin: 50px;
   width: 600px;
   height: 500px;
-  background-color: #4FA3A5;
+  background-color: #4E5055;
   border-radius: 15px;
 }
 
@@ -37,6 +39,7 @@
 
   .city-name{
     font-size: 60px;
+    color: white;
   }
 }
 
@@ -44,6 +47,7 @@
   //border: 1px solid red;
   width: 100%;
   .temp{
+    color: white;
     font-size: 60px;
   }
   img{
@@ -55,7 +59,7 @@
   margin: 50px;
   width: 600px;
   height: 500px;
-  background-color: #4FA3A5;
+  background-color: #4E5055;
   border-radius: 15px;
 }
 
@@ -63,10 +67,12 @@
   //border: 1px solid red;
   width: 100%;
 
-  .temp-type-img{
-    width: 50px;
+  i{
+    font-size: 50px;
+    color: white;
   }
   .temp-text{
+    color: white;
     font-size: 50px;
   }
 }
@@ -75,10 +81,12 @@
   //border: 1px solid red;
   width: 100%;
 
-  .temp-type-img{
-    width: 50px;
+  i{
+    font-size: 50px;
+    color: white;
   }
   .temp-text{
+    color: white;
     font-size: 50px;
   }
 }

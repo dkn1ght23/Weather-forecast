@@ -1,13 +1,13 @@
 <div class="wrapper" fxLayout="column" id="search-details">
 
-  <div class="report" fxLayout="row" fxLayoutAlign="space-around center">
+  <div class="report" fxLayout="column" fxLayoutAlign="space-around center"  fxLayoutGap="25px">
     <div class="heading">
       <p>Today's report</p>
     </div>
 
-    <div class="date-time" fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="5px">
+    <div class="date-time" fxLayout="column" fxLayoutAlign="space-around center">
       <p class="date">{{date | date:'mediumDate'}}</p>
-      <p class="time">{{date | date:'shortTime'}}</p>
+      <!--<p class="time">{{date | date:'shortTime'}}</p>-->
     </div>
   </div>
 
@@ -30,12 +30,12 @@
         <div class="right-top" fxLayout="row" fxLayoutAlign="space-around center">
 
           <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="20px">
-            <img class="temp-type-img" src="assets/cold.png">
+            <i class="fa-solid fa-temperature-low"></i>
             <p class="temp-text">{{(minTemp - 273.15).toFixed(0)}}°C</p>
           </div>
 
           <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="20px">
-            <img class="temp-type-img" src="assets/hot.png">
+            <i class="fa-solid fa-temperature-high"></i>
             <p class="temp-text">{{(maxTemp - 273.15).toFixed(0)}}°C</p>
           </div>
 
@@ -44,12 +44,12 @@
         <div class="right-bottom" fxLayout="row" fxLayoutAlign="space-around center">
 
           <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="20px">
-            <img class="temp-type-img" src="assets/humidity.png">
+            <i class="fa-solid fa-droplet"></i>
             <p class="temp-text">{{humidity}}%</p>
           </div>
 
           <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="20px">
-            <img class="temp-type-img" src="assets/autumn.png">
+            <i class="fa-solid fa-wind"></i>
             <p class="temp-text">{{wind}} km/h</p>
           </div>
         </div>

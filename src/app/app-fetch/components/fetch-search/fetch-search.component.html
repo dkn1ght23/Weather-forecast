@@ -16,11 +16,31 @@
 
     <div class="nav-option">
       <ul fxLayout="row" fxLayoutAlign="center" fxLayoutGap="55px">
-        <li fxLayout="row" fxLayoutAlign="center center">
-          <a routerLink="/blog" routerLinkActive="active">ABOUT US</a>
+        <li>
+          <mat-expansion-panel hideToggle fxLayout="column" fxLayoutAlign="center center">
+            <mat-expansion-panel-header>
+              <mat-panel-title>ABOUT ME</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Hi, I'm Mujammal Ahmed. Currently looking for a job.</p>
+          </mat-expansion-panel>
         </li>
         <li fxLayout="row" fxLayoutAlign="center center">
-          <a routerLink="/blog" routerLinkActive="active">CONTACT US</a>
+          <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>CONTACT ME</mat-panel-title>
+            </mat-expansion-panel-header>
+            <div fxLayout="row" fxLayoutAlign="space-evenly center">
+              <a href="https://www.facebook.com/mujammal.ahmed.5" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://github.com/dkn1ght23" target="_blank">
+                <i class="fa-brands fa-github-square"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mujammal-ahmed-97bb4a23b/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </mat-expansion-panel>
         </li>
       </ul>
     </div>
@@ -34,8 +54,11 @@
 
       <div>
         <mat-form-field class="mat-form-field" appearance="fill">
-          <mat-label class="mat-label">Search a city</mat-label>
-          <textarea class="text-area" matInput placeholder="Ex. Bangladesh..." [(ngModel)]="cityName"></textarea>
+          <mat-label class="mat-label">Search a place name</mat-label>
+          <textarea class="text-area" matInput
+                    placeholder="Ex. Bangladesh..."
+                    [(ngModel)]="cityName">
+          </textarea>
         </mat-form-field>
       </div>
 

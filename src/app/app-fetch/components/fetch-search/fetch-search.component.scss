@@ -27,9 +27,13 @@
 }
 
 .wrapper .right .nav-option > ul > li{
-  font-size: 40px;
+  font-size: 50px;
+  width: 220px;
   list-style: none;
   a{
+    color: #383838;
+  }
+  mat-expansion-panel{
     text-decoration: none;
     color: #383838;
   }

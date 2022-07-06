@@ -11,6 +11,7 @@ import {MatIconModule} from "@angular/material/icon";
 import { FetchSearchComponent } from './components/fetch-search/fetch-search.component';
 import { FetchDetailsComponent } from './components/fetch-details/fetch-details.component';
 import {MatCardModule} from "@angular/material/card";
+import {MatExpansionModule} from "@angular/material/expansion";
 
 @NgModule({
     declarations: [
@@ -23,15 +24,16 @@ import {MatCardModule} from "@angular/material/card";
     FetchSearchComponent,
     FetchDetailsComponent
   ],
-  imports: [
-    CommonModule,
-    AppFetchRoutingModule,
-    MatInputModule,
-    FormsModule,
-    FlexModule,
-    MatButtonModule,
-    MatIconModule,
-    MatCardModule
-  ]
+    imports: [
+        CommonModule,
+        AppFetchRoutingModule,
+        MatInputModule,
+        FormsModule,
+        FlexModule,
+        MatButtonModule,
+        MatIconModule,
+        MatCardModule,
+        MatExpansionModule
+    ]
 })
 export class AppFetchModule { }

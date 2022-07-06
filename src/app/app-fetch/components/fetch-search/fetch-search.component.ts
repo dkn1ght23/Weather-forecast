@@ -20,8 +20,7 @@ export class FetchSearchComponent implements OnInit {
   minTemp: any
   humidity: any
   wind: any
-
-
+  feelsLike: any
 
   constructor(public blogServices: BlogService) {
   }
@@ -31,15 +30,16 @@ export class FetchSearchComponent implements OnInit {
 
   buttonClicked(city: any){
     this.blogServices.getAllPosts(city).subscribe((response: any) => {
-      console.log(response);
+      //console.log(response);
       this.weatherReport = response["main"];
-      console.log(this.weatherReport);
+      //console.log(this.weatherReport);
 
       //details to variable
       this.temperature = this.weatherReport.temp;
       this.minTemp = this.weatherReport.temp_min;
       this.maxTemp = this.weatherReport.temp_max;
       this.humidity = this.weatherReport.humidity;
+      this.feelsLike = this.weatherReport.feels_like;
 
       //windSpeed
       this.wind = response["wind"].speed;
@@ -51,7 +51,7 @@ export class FetchSearchComponent implements OnInit {
       this.weatherIconDetails = response['weather'][0];
       //console.log(this.weatherIconDetails);
       this.icon = this.weatherIconDetails.icon;
-      console.log(this.icon)
+      //console.log(this.icon);
     })
   }
 

@@ -1,17 +1,18 @@
-<div class="wrapper" fxLayout="column" id="search-details">
+<div id="search-details">
+  <div class="wrapper" fxLayout="column" *ngIf="!loading">
 
-  <div class="report" fxLayout="column" fxLayoutAlign="space-around center"  fxLayoutGap="25px">
-    <div class="heading">
-      <p>Today's report</p>
+    <div class="report" fxLayout="column" fxLayoutAlign="space-around center"  fxLayoutGap="25px">
+      <div class="heading">
+        <p>Today's report</p>
+      </div>
+
+      <div class="date-time" fxLayout="column" fxLayoutAlign="space-around center">
+        <p class="date">{{date | date:'mediumDate'}}</p>
+        <!--<p class="time">{{date | date:'shortTime'}}</p>-->
+      </div>
     </div>
 
-    <div class="date-time" fxLayout="column" fxLayoutAlign="space-around center">
-      <p class="date">{{date | date:'mediumDate'}}</p>
-      <!--<p class="time">{{date | date:'shortTime'}}</p>-->
-    </div>
-  </div>
-
-  <div class="details" fxLayout="row" fxLayoutAlign="space-around center">
+    <div class="details" fxLayout="row" fxLayoutAlign="space-around center">
 
       <mat-card class="mat-left" fxLayout="column" fxLayoutAlign="space-evenly center">
         <div class="left-top" fxLayout="row" fxLayoutAlign="space-evenly center">
@@ -20,8 +21,13 @@
         </div>
 
         <div class="left-bottom" fxLayout="row" fxLayoutAlign="space-evenly center">
-          <p class="temp" style="font-size: 50px">{{(temperature - 273.15).toFixed(0)}}°C</p>
-          <img [src]="weatherIcon">
+          <div fxLayout="column" fxLayoutAlign="space-evenly center" fxLayoutGap="25px">
+            <p class="temp" style="font-size: 50px">{{(temperature - 273.15).toFixed(0)}}°C</p>
+            <p class="feel-temp">Feels like {{(feelslike - 273.15).toFixed(0)}}°C</p>
+          </div>
+          <div>
+            <img [src]="weatherIcon">
+          </div>
         </div>
       </mat-card>
 
@@ -56,13 +62,11 @@
 
       </mat-card>
 
-  </div>
+    </div>
 
+  </div>
 </div>
 
-
-<!--<div style="width: 100%; background-color: pink">
-  <p style="font-size: 50px">{{(temperature - 273.15).toFixed(0)}}°C</p>
-  <p style="font-size: 50px">{{cityName}}</p>
-</div>-->
-
+<div class="error" fxLayout="row" fxLayoutAlign="center center" *ngIf="loading">
+  <img src="assets/error.svg">
+</div>

@@ -18,9 +18,11 @@ export class FetchDetailsComponent implements OnInit, OnChanges {
   @Input()  minTemp: any;
   @Input()  humidity: any;
   @Input()  wind: any;
+  @Input()  feelslike: any;
 
   weatherIcon: any
   date = new Date();
+  loading : boolean =  true;
 
   constructor() {
   }
@@ -38,6 +40,7 @@ export class FetchDetailsComponent implements OnInit, OnChanges {
       return;
     }
     this.weatherIcon = `http://openweathermap.org/img/wn/${this.iconName}@4x.png`;
+    this.loading = false;
     console.log(this.weatherIcon);
   }
 

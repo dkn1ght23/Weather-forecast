@@ -1,72 +1,96 @@
-<div id="search-details">
-  <div class="wrapper" fxLayout="column" *ngIf="!loading">
+<div class="wrapper">
 
-    <div class="report" fxLayout="column" fxLayoutAlign="space-around center"  fxLayoutGap="25px">
-      <div class="heading">
-        <p>Today's report</p>
-      </div>
+  <div class="inner-wrapper" fxLayout=" wrap"
+       fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%">
 
-      <div class="date-time" fxLayout="column" fxLayoutAlign="space-around center">
-        <p class="date">{{date | date:'mediumDate'}}</p>
-        <!--<p class="time">{{date | date:'shortTime'}}</p>-->
-      </div>
+    <div class="report" fxFlex="100%"  fxFlex.sm="100%"
+         fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+
+      <p class="headline">Today's Report</p>
+      <p class="date">{{date | date:'mediumDate'}}</p>
+
     </div>
 
-    <div class="details" fxLayout="row" fxLayoutAlign="space-around center">
+    <div class="details" fxFlex="100%" fxFlex.sm="100%" fxFlex.sm="100%"
+         fxLayout=" wrap" fxLayoutAlign="center">
 
-      <mat-card class="mat-left" fxLayout="column" fxLayoutAlign="space-evenly center">
-        <div class="left-top" fxLayout="row" fxLayoutAlign="space-evenly center">
-          <p class="city-name">{{cityName}}</p>
-          <!--<mat-icon class="location-icon">location_on</mat-icon>-->
-        </div>
+      <div class="left" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%"
+           fxLayoutAlign="center">
 
-        <div class="left-bottom" fxLayout="row" fxLayoutAlign="space-evenly center">
-          <div fxLayout="column" fxLayoutAlign="space-evenly center" fxLayoutGap="25px">
-            <p class="temp" style="font-size: 50px">{{(temperature - 273.15).toFixed(0)}}°C</p>
-            <p class="feel-temp">Feels like {{(feelslike - 273.15).toFixed(0)}}°C</p>
-          </div>
-          <div>
-            <img [src]="weatherIcon">
-          </div>
-        </div>
-      </mat-card>
+        <mat-card class="mat-left" fxLayout="column wrap" fxLayoutAlign="space-evenly center"
+        fxFlex="80%">
 
-      <mat-card class="mat-right" fxLayout="column" fxLayoutAlign="space-around center">
-
-        <div class="right-top" fxLayout="row" fxLayoutAlign="space-around center">
-
-          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="20px">
-            <i class="fa-solid fa-temperature-low"></i>
-            <p class="temp-text">{{(minTemp - 273.15).toFixed(0)}}°C</p>
+          <div class="left-top" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="50%"
+               fxLayout=" wrap" fxLayoutAlign="space-evenly center">
+            <p class="city-name">{{cityName}}</p>>
           </div>
 
-          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="20px">
-            <i class="fa-solid fa-temperature-high"></i>
-            <p class="temp-text">{{(maxTemp - 273.15).toFixed(0)}}°C</p>
+          <div class="left-bottom" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="50%"
+               fxLayout="row wrap" fxLayoutAlign="space-between center">
+
+            <div class="temperature" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="50%"
+                 fxLayout="column" fxLayoutAlign="space-evenly center"
+                 fxLayoutGap="25px">
+              <p class="temp" style="font-size: 50px">{{(temperature - 273.15).toFixed(0)}}°C</p>
+              <p class="feel-temp">Feels like {{(feelslike - 273.15).toFixed(0)}}°C</p>
+            </div>
+
+            <div class="img" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="50%">
+              <img [src]="weatherIcon">
+            </div>
+
           </div>
 
-        </div>
+        </mat-card>
 
-        <div class="right-bottom" fxLayout="row" fxLayoutAlign="space-around center">
+      </div>
 
-          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="20px">
-            <i class="fa-solid fa-droplet"></i>
-            <p class="temp-text">{{humidity}}%</p>
+      <div class="right" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%"
+           fxLayoutAlign="center">
+
+        <mat-card class="mat-right" fxLayout="column wrap" fxLayoutAlign="space-evenly center"
+                  fxFlex="80%">
+          <div class="right-top" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="50%"
+               fxLayout=" wrap" fxLayoutAlign="space-evenly center">
+
+            <div fxLayout="row" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="50%"
+                 fxLayoutAlign="center center" fxLayoutGap="10px">
+              <i class="fa-solid fa-temperature-low"></i>
+              <p class="temp-text">{{(minTemp - 273.15).toFixed(0)}}°C</p>
+              <p class="temp-text">35°C</p>
+            </div>
+
+            <div fxLayout="row" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="50%"
+                 fxLayoutAlign="center center" fxLayoutGap="10px">
+              <i class="fa-solid fa-temperature-high"></i>
+              <p class="temp-text">{{(maxTemp - 273.15).toFixed(0)}}°C</p>
+              <p class="temp-text">35°C</p>
+            </div>
+
           </div>
 
-          <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="20px">
-            <i class="fa-solid fa-wind"></i>
-            <p class="temp-text">{{wind}} km/h</p>
-          </div>
-        </div>
+          <div class="right-bottom" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="50%"
+               fxLayout=" wrap" fxLayoutAlign="space-evenly center">
 
-      </mat-card>
+            <div fxLayout="row" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="50%"
+                 fxLayoutAlign="center center" fxLayoutGap="10px">
+              <i class="fa-solid fa-droplet"></i>
+              <p class="temp-text">{{humidity}}%</p>
+            </div>
+
+            <div fxLayout="row" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="50%"
+                 fxLayoutAlign="center center" fxLayoutGap="10px">
+              <i class="fa-solid fa-wind"></i>
+              <p class="temp-text">{{wind}} km/h</p>
+            </div>
+
+          </div>
+
+        </mat-card>
+
+      </div>
 
     </div>
 
   </div>
-</div>
-
-<div class="error" fxLayout="row" fxLayoutAlign="center center" *ngIf="loading">
-  <img src="assets/error.svg">
 </div>

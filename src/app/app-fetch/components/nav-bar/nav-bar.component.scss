@@ -1,0 +1,14 @@
+.wrapper{
+  background-color: dodgerblue;
+  min-height: 70px;
+}
+
+.wrapper .header h1{
+  font-weight: bold;
+}
+
+.wrapper .option >ul >li{
+  //margin-left: 20%;
+  font-size: 20px;
+  list-style: none;
+}

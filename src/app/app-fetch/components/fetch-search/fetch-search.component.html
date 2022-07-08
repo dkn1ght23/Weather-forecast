@@ -1,84 +1,40 @@
-<div class="wrapper" fxLayout="row" fxLayoutAlign="space-around center">
+<div class="wrapper" fxFlex="100%" fxLayout=" wrap">
 
-  <div class="left" fxLayout="column" fxLayoutAlign="space-evenly center">
-
-    <div class="typo">
-
-    </div>
-
-    <div class="svg" fxLayout="column" fxLayoutAlign="space-evenly center">
-      <img src="assets/weather.svg">
-    </div>
-
+  <div class="left" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%">
+    <img class="svg" src="assets/weather.svg">
   </div>
 
-  <div class="right" fxLayout="column" fxLayoutAlign=" center">
+  <div class="right" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%"
+        fxLayout="column" fxLayoutAlign="center center">
 
-    <div class="nav-option">
-      <ul fxLayout="row" fxLayoutAlign="center" fxLayoutGap="55px">
-        <li>
-          <mat-expansion-panel hideToggle fxLayout="column" fxLayoutAlign="center center">
-            <mat-expansion-panel-header>
-              <mat-panel-title>ABOUT ME</mat-panel-title>
-            </mat-expansion-panel-header>
-            <p>Hi, I'm Mujammal Ahmed. Currently looking for a job.</p>
-          </mat-expansion-panel>
-        </li>
-        <li fxLayout="row" fxLayoutAlign="center center">
-          <mat-expansion-panel hideToggle>
-            <mat-expansion-panel-header>
-              <mat-panel-title>CONTACT ME</mat-panel-title>
-            </mat-expansion-panel-header>
-            <div fxLayout="row" fxLayoutAlign="space-evenly center">
-              <a href="https://www.facebook.com/mujammal.ahmed.5" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="https://github.com/dkn1ght23" target="_blank">
-                <i class="fa-brands fa-github-square"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/mujammal-ahmed-97bb4a23b/" target="_blank">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </div>
-          </mat-expansion-panel>
-        </li>
-      </ul>
+    <div class="upper" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%">
+      <p class="introduction1">
+        Find the weather update and make your day easier</p>
     </div>
 
-    <div class="headline"  fxLayout="column" fxLayoutAlign=" center" fxLayoutGap="20px">
-      <p class="introduction1">Weather Forecast</p>
-      <p class="introduction2">Find the update and make your day easier</p>
-    </div>
-
-    <div class="search-box" fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="5px">
-
-      <div>
-        <mat-form-field class="mat-form-field" appearance="fill">
-          <mat-label class="mat-label">Search a place name</mat-label>
-          <textarea class="text-area" matInput
-                    placeholder="Ex. Bangladesh..."
-                    [(ngModel)]="cityName">
+    <div class="lower" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%">
+      <mat-form-field class="mat-form-field"
+                      fxFlex="80%" fxFlex.sm="80%" fxFlex.xs="80%">
+        <mat-label class="mat-label">Search a place name</mat-label>
+        <textarea class="text-area" matInput
+                  placeholder="Ex. Bangladesh..."
+                  [(ngModel)]="cityName">
           </textarea>
-        </mat-form-field>
-      </div>
+      </mat-form-field>
 
-      <div>
-        <a href="#search-details">
-          <button class="search-button" mat-raised-button
-                  fxLayoutAlign="row" fxLayoutAlign="center center"
-                  (click)="buttonClicked(cityName)">
-            <mat-icon>search</mat-icon>
-          </button>
-        </a>
-      </div>
-
+      <a href="#search-details" fxFlex="20%" fxFlex.sm="20%" fxFlex.xs="20%">
+        <button class="search-button" mat-raised-button
+                fxLayoutAlign="row" fxLayoutAlign="center center"
+                (click)="buttonClicked(cityName)">
+          <mat-icon>search</mat-icon>
+        </button>
+      </a>
     </div>
 
   </div>
 
 </div>
-
-<app-fetch-details
+<!--<app-fetch-details
   [cityName] = "cityName"
   [temperature] = "temperature"
   [iconName] = "icon"
@@ -87,4 +43,4 @@
   [humidity] = "humidity"
   [wind] = "wind"
   [feelslike] = "feelsLike">
-</app-fetch-details>
+</app-fetch-details>-->

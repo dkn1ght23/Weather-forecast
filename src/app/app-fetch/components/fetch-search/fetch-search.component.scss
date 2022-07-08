@@ -1,71 +1,35 @@
 .wrapper{
+  //background-color: royalblue;
+  min-height: 750px;
   .left{
-    width: 45%;
-    height: 800px;
     background-color: lightskyblue;
   }
   .right{
-    width: 55%;
-    height: 800px;
-    //background-color: #aed6dc;
-    background-color: #FEF9EF;
+    background-color: lightskyblue;
   }
 }
 
 .wrapper .left .svg{
-  //border: 1px solid red;
-  img{
-    width: 85%;
-  }
-}
-
-.wrapper .right .nav-option{
-  //border: 1px solid red;
-  //width: 100%;
-  margin-top: 30px;
-  margin-left: 250px;
-}
-
-.wrapper .right .nav-option > ul > li{
-  font-size: 50px;
-  width: 220px;
-  list-style: none;
-  a{
-    color: #383838;
-  }
-  mat-expansion-panel{
-    text-decoration: none;
-    color: #383838;
-  }
-}
-
-.wrapper .right .headline{
-  //border: 1px solid red;
-  margin-top: 150px;
   width: 100%;
+}
+
+.wrapper .right .upper{
+  //background-color: blanchedalmond;
   .introduction1{
-    //for typo
-    //color: darkslategray;
-    color: #383838;
-    font-size: 50px;
-  }
-  .introduction2{
-    font-size: 25px;
-    color: #383838;
+    margin-top: 25%;
+    font-size: 30px;
   }
 }
-
-.wrapper .right .search-box{
-  margin-top: 5%;
-  //border: 1px solid red;
+.wrapper .right .lower{
+  //background-color: #383838;
 }
 
-.wrapper .right .search-box .mat-form-field{
+.wrapper .right .lower .mat-form-field{
   width: 550px;
   height: 1px;
 }
 
-.wrapper .right .search-box .mat-form-field .mat-label{
+.wrapper .right .lower .mat-form-field .mat-label{
   font-size: 20px;
   color: #383838;
 }
@@ -73,25 +37,22 @@
 ::placeholder {
   color: #383838;
   opacity: 1;
-  font-size: 20px;
+  font-size: 15px;
 }
 
-.wrapper .right .search-box .mat-form-field .text-area{
+.wrapper .right .lower .mat-form-field .text-area{
   font-size: 25px;
   color: #383838;
 }
 
-.wrapper .right .search-box  .search-button{
-  top:6px;
-  height: 90px;
-  width: 100px;
-  background-color: #FEF9EF;
+.wrapper .right .lower .search-button{
+  background-color: lightskyblue;
   border-radius: 10px;
   border: 3px solid #383838;
 
   mat-icon{
     font-size: 70px;
-    height: 60px;
+    height: 70px;
     margin-right: 35px;
     color: #383838;
   }

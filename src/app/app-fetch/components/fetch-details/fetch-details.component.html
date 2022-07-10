@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper" id="search-details">
 
   <div class="inner-wrapper" fxLayout=" wrap"
        fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%">
@@ -22,7 +22,7 @@
 
           <div class="left-top" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="50%"
                fxLayout=" wrap" fxLayoutAlign="space-evenly center">
-            <p class="city-name">{{cityName}}</p>>
+            <p class="city-name">{{cityName}}</p>
           </div>
 
           <div class="left-bottom" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="50%"
@@ -57,14 +57,12 @@
                  fxLayoutAlign="center center" fxLayoutGap="10px">
               <i class="fa-solid fa-temperature-low"></i>
               <p class="temp-text">{{(minTemp - 273.15).toFixed(0)}}°C</p>
-              <p class="temp-text">35°C</p>
             </div>
 
             <div fxLayout="row" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="50%"
                  fxLayoutAlign="center center" fxLayoutGap="10px">
               <i class="fa-solid fa-temperature-high"></i>
               <p class="temp-text">{{(maxTemp - 273.15).toFixed(0)}}°C</p>
-              <p class="temp-text">35°C</p>
             </div>
 
           </div>

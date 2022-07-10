@@ -5,11 +5,11 @@
     min-height: 550px;
   }
   .report{
-    background-color: #00A0F3;
+    background-color: #006CA7;
     min-height: 100px;
   }
   .details{
-    background-color: lightskyblue;
+    background-color: #006CA7;
   }
 }
 
@@ -23,7 +23,7 @@
 }
 
 .wrapper .inner-wrapper .details .left{
-  background-color: #00A0F3;
+  //background-color: #D1F5FF;
   min-height: 600px;
 }
 
@@ -32,7 +32,7 @@
   height: 450px;
   min-height: 250px;
   margin-top: 40px;
-  background-color: lightskyblue;
+  background-color: steelblue;
   .left-top{
     width: 100%;
     .city-name{
@@ -45,12 +45,11 @@
 }
 
 .wrapper .inner-wrapper .details .right{
-  background-color: #00A0F3;
   min-height: 600px;
 }
 
 .wrapper .inner-wrapper .details .right .mat-right{
-  background-color: lightskyblue;
+  background-color: steelblue;
   border-radius: 20px;
   height: 450px;
   min-height: 250px;

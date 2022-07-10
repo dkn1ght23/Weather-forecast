@@ -1,40 +1,55 @@
-<div class="wrapper" fxFlex="100%" fxLayout=" wrap">
+<div class="wrapper">
 
-  <div class="left" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%">
-    <img class="svg" src="assets/weather.svg">
-  </div>
+  <div class="inner-wrapper" fxLayout=" wrap"
+       fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%">
 
-  <div class="right" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%"
-        fxLayout="column" fxLayoutAlign="center center">
+    <div class="left" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%"
+         fxLayoutAlign="center center">
 
-    <div class="upper" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%">
-      <p class="introduction1">
-        Find the weather update and make your day easier</p>
+      <img src="assets/weather.svg">
+
     </div>
 
-    <div class="lower" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%">
-      <mat-form-field class="mat-form-field"
-                      fxFlex="80%" fxFlex.sm="80%" fxFlex.xs="80%">
-        <mat-label class="mat-label">Search a place name</mat-label>
-        <textarea class="text-area" matInput
-                  placeholder="Ex. Bangladesh..."
-                  [(ngModel)]="cityName">
+    <div class="right" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%"
+         fxLayout="column wrap" fxLayout.xs="row wrap">
+
+      <div class="upper" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%">
+
+        <p class="intro">Find the weather update and make your day easier</p>
+
+      </div>
+
+      <div class="lower" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%">
+
+        <div class="search-box" fxFlex="80%" fxFlex.sm="80%" fxFlex.xs="80%">
+          <mat-form-field class="mat-form-field"
+                          fxFlex="80%" fxFlex.sm="80%" fxFlex.xs="80%">
+            <mat-label class="mat-label">Search a place name</mat-label>
+            <textarea class="text-area" matInput
+                      placeholder="Ex. Bangladesh..."
+                      [(ngModel)]="cityName">
           </textarea>
-      </mat-form-field>
+          </mat-form-field>
+        </div>
 
-      <a href="#search-details" fxFlex="20%" fxFlex.sm="20%" fxFlex.xs="20%">
-        <button class="search-button" mat-raised-button
-                fxLayoutAlign="row" fxLayoutAlign="center center"
-                (click)="buttonClicked(cityName)">
-          <mat-icon>search</mat-icon>
-        </button>
-      </a>
+        <div class="button" fxFlex="20%" fxFlex.sm="20%" fxFlex.xs="20%">
+          <a href="#search-details">
+            <button class="search-button" mat-raised-button
+                    fxLayoutAlign="row" fxLayoutAlign="center center"
+                    (click)="buttonClicked(cityName)">
+              <mat-icon>search</mat-icon>
+            </button>
+          </a>
+        </div>
+
+      </div>
+
     </div>
 
   </div>
+
 </div>
 
-<!--
 <app-fetch-details
   [cityName] = "cityName"
   [temperature] = "temperature"
@@ -45,4 +60,3 @@
   [wind] = "wind"
   [feelslike] = "feelsLike">
 </app-fetch-details>
--->

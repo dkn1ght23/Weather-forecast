@@ -1,16 +1,27 @@
 .wrapper{
-  background-color: #6696BB;
-  min-height: 70px;
+  background-color: #4EC9C3;
+  min-height: 80px;
 }
 
 .wrapper .header h1{
-  font-weight: bold;
-  color: black;
+  //font-weight: bold;
+  font-size: 40px;
+  color: #3F3D56;
+  margin-right: 40%;
+}
+
+.wrapper .option > ul{
+  //border: 1px solid red;
+  margin-left: 35%;
 }
 
 .wrapper .option >ul >li{
-  //margin-left: 20%;
-  font-size: 20px;
+  //margin-left: 50%;
   list-style: none;
-  color: black;
+  color: #3F3D56;
+  p{
+    //margin-left: 50%;
+    //border: 1px solid red;
+    font-size: 30px;
+  }
 }

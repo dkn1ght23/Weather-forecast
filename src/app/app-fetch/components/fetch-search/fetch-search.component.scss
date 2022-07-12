@@ -4,11 +4,12 @@
     min-height: 750px;
     .left{
       min-height: 750px;
-      background-color: #006CA7;
+      //background-color: #4EC9C3;
+      background-color: #DADDE2;
     }
     .right{
       min-height: 750px;
-      background-color: #006CA7;
+      background-color: #DADDE2;
     }
   }
 }
@@ -30,7 +31,7 @@
   margin-left: 5%;
   margin-top: 30%;
   font-size: 30px;
-  color: #EEE8A9;
+  color: #3F3D56;
 }
 
 .wrapper .inner-wrapper .right .lower .search-box{
@@ -38,18 +39,18 @@
   .mat-form-field{
     margin-left: 19%;
     .mat-label{
-      color: #EEE8A9;
+      color: #3F3D56;
       font-size: 20px;
     }
     .text-area{
       //font-size: 20px;
-      color: #EEE8A9;
+      color: #3F3D56;
     }
   }
 }
 
 ::placeholder {
-  color: #EEE8A9;
+  color: #3F3D56;
   opacity: 1;
   font-size: 15px;
 }
@@ -59,10 +60,10 @@
   a{
     .search-button{
       height: 14%;
-      background-color: #006CA7;
-      border: 2px solid #EEE8A9;
+      background-color: #DADDE2;
+      border: 3px solid #3F3D56;
       mat-icon{
-        color: #EEE8A9;
+        color: #3F3D56;
       }
     }
   }

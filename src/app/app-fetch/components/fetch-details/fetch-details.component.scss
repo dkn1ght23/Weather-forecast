@@ -3,13 +3,14 @@
   //min-height: 550px;
   .inner-wrapper{
     min-height: 550px;
+    background-color: #DADDE2;
   }
   .report{
-    background-color: #006CA7;
+    //background-color: #4EC9C3;
     min-height: 100px;
   }
   .details{
-    background-color: #006CA7;
+    //background-color: #4EC9C3;
   }
 }
 
@@ -32,7 +33,8 @@
   height: 450px;
   min-height: 250px;
   margin-top: 40px;
-  background-color: steelblue;
+  background-color: #C0C2CC;
+  box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.4);
   .left-top{
     width: 100%;
     .city-name{
@@ -49,11 +51,12 @@
 }
 
 .wrapper .inner-wrapper .details .right .mat-right{
-  background-color: steelblue;
+  background-color: #C0C2CC;
   border-radius: 20px;
   height: 450px;
   min-height: 250px;
   margin-top: 40px;
+  box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.4);
   .right-top{
     width: 100%;
     i{
@@ -74,4 +77,3 @@
     }
   }
 }
-

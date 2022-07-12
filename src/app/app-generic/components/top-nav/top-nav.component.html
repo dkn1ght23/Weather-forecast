@@ -1,0 +1,31 @@
+<header class="wrapper" fxFlex="100%" fxLayout="row">
+
+  <div class="header" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="50%"
+       fxLayout="row" fxLayoutAlign="center center">
+    <h1>Weather Forecast</h1>
+  </div>
+
+  <div class="option" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="50%"
+       fxLayout="row" fxLayoutAlign="center center">
+
+    <ul fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="25px"  fxHide.xs>
+      <li >
+        <p>ABOUT ME</p>
+      </li>
+      <li>
+        <P>CONTACT ME</P>
+      </li>
+    </ul>
+
+    <button fxHide fxShow.xs mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>About Us</button>
+      <button mat-menu-item>Contact Us</button>
+    </mat-menu>
+
+  </div>
+
+</header>
+

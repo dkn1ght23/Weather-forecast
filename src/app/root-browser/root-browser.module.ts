@@ -7,6 +7,7 @@ import {BrowserModule} from "@angular/platform-browser";
 import {AppFetchModule} from "../app-fetch/app-fetch.module";
 import {HttpClientModule} from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {AppGenericModule} from "../app-generic/app-generic.module";
 
 
 
@@ -14,13 +15,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     RootDefaultComponent
   ],
-    imports: [
-        BrowserModule,
-        RootBrowserRoutingModule,
-        AppFetchModule,
-        HttpClientModule,
-        BrowserAnimationsModule,
-    ],
+  imports: [
+    BrowserModule,
+    RootBrowserRoutingModule,
+    AppFetchModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    AppGenericModule,
+  ],
   providers: [],
   bootstrap: [
     RootDefaultComponent

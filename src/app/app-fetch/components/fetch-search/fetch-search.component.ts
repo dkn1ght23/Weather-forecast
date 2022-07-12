@@ -44,7 +44,7 @@ export class FetchSearchComponent implements OnInit {
       //windSpeed
       this.wind = response["wind"].speed;
 
-      //this.name = response['name'];
+      this.name = city;
       //console.log(this.name);
 
       //weatherIcon

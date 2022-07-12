@@ -12,22 +12,19 @@ import { FetchSearchComponent } from './components/fetch-search/fetch-search.com
 import { FetchDetailsComponent } from './components/fetch-details/fetch-details.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatExpansionModule} from "@angular/material/expansion";
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import {CdkTableModule} from "@angular/cdk/table";
 import {MatMenuModule} from "@angular/material/menu";
 
 @NgModule({
     declarations: [
-        FetchDefaultComponent,
-        FetchSearchComponent,
+      FetchDefaultComponent,
+      FetchSearchComponent,
       FetchDetailsComponent,
-      NavBarComponent
     ],
     exports: [
         FetchDefaultComponent,
         FetchSearchComponent,
         FetchDetailsComponent,
-        NavBarComponent
     ],
   imports: [
     CommonModule,

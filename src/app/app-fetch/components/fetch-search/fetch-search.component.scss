@@ -1,15 +1,32 @@
+@mixin gt-el{
+  @media (min-height: 920px){
+    @content;
+  }
+}
+
 .wrapper{
   //background-color: royalblue;
   .inner-wrapper{
     min-height: 750px;
+
+    @include gt-el{
+      min-height: 900px;
+    }
+
     .left{
       min-height: 750px;
       //background-color: #4EC9C3;
       background-color: #DADDE2;
+      @include gt-el{
+        min-height: 900px;
+      }
     }
     .right{
       min-height: 750px;
       background-color: #DADDE2;
+      @include gt-el{
+        min-height: 900px;
+      }
     }
   }
 }

@@ -22,6 +22,8 @@ export class FetchSearchComponent implements OnInit {
   wind: any
   feelsLike: any
 
+  searchToken !: boolean
+
   constructor(public blogServices: BlogService) {
   }
 
@@ -52,6 +54,10 @@ export class FetchSearchComponent implements OnInit {
       //console.log(this.weatherIconDetails);
       this.icon = this.weatherIconDetails.icon;
       //console.log(this.icon);
+
+      //searchToken
+      this.searchToken = true
+
     })
   }
 

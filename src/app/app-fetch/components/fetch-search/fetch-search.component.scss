@@ -3,6 +3,23 @@
     @content;
   }
 }
+@mixin gt-lg{
+  @media (max-width: 1406px){
+    @content;
+  }
+}
+
+@mixin md{
+  @media (max-width: 852px){
+    @content;
+  }
+}
+
+@mixin lt-md{
+  @media (max-width: 511px){
+    @content;
+  }
+}
 
 .wrapper{
   //background-color: royalblue;
@@ -44,11 +61,20 @@
   }
 }
 
-.wrapper .inner-wrapper .right .upper .intro{
+.wrapper .inner-wrapper .right .intro{
   margin-left: 5%;
   margin-top: 30%;
+  margin-bottom: 10%;
   font-size: 30px;
   color: #3F3D56;
+  line-height: 25px;
+  text-align: center;
+  @include gt-lg{
+    font-size: 25px;
+  }
+  @include gt-lg{
+    font-size: 25px;
+  }
 }
 
 .wrapper .inner-wrapper .right .lower .search-box{

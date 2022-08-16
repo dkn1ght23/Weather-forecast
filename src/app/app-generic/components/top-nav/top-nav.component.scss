@@ -1,27 +1,18 @@
-@mixin width-1095{
-  @media (min-width: 925px) and (max-width: 1095px){
+@mixin gt-lg{
+  @media (max-width: 1145px){
     @content;
   }
 }
 
-@mixin width-925{
-  @media (min-width: 690px) and (max-width: 925px){
+@mixin lg{
+  @media (max-width: 835px){
     @content;
-    //1042
   }
 }
 
-@mixin width-688{
-  @media (min-width: 599px) and (max-width: 688px){
+@mixin xs{
+  @media (max-width: 599px){
     @content;
-    //1042
-  }
-}
-
-@mixin width-688{
-  @media (min-width: 599px) and (max-width: 690px){
-    @content;
-    //1042
   }
 }
 
@@ -30,19 +21,35 @@
   min-height: 80px;
 }
 
+.wrapper .header{
+  width: 100%;
+  @include xs{
+    margin-left: 50px;
+  }
+}
+
+.wrapper .option{
+  @include xs{
+    //margin-right: 50px;
+  }
+  @include lg{
+    //margin-right: 50px;
+  }
+}
+
 .wrapper .header h1{
   //font-weight: bold;
   font-size: 40px;
   color: #3F3D56;
   margin-right: 40%;
-  @include width-1095{
-    font-size: 35px;
+  @include gt-lg{
+    font-size: 30px;
   }
-  @include width-925{
+  @include lg{
     font-size: 25px;
   }
-  @include width-688{
-    font-size: 20px;
+  @include xs{
+    font-size: 18px;
   }
 }
 
@@ -55,18 +62,13 @@
   //margin-left: 50%;
   list-style: none;
   color: #3F3D56;
+  text-align: center;
   p{
-    //margin-left: 50%;
-    //border: 1px solid red;
     font-size: 30px;
-
-    @include width-1095{
-      font-size: 25px;
+    @include gt-lg{
+      font-size: 20px;
     }
-    @include width-925{
-      font-size: 18px;
-    }
-    @include width-688{
+    @include gt-lg{
       font-size: 15px;
     }
   }

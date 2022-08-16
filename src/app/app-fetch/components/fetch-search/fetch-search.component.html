@@ -13,21 +13,18 @@
     <div class="right" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%"
          fxLayout="column wrap" fxLayout.xs="row wrap">
 
-      <div class="upper" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%">
+      <div class="upper" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%" >
 
-        <p class="intro">Find the weather update and make your day easier</p>
+        <p class="intro" fxLayoutAlign="center center">Find the weather update and make your day easier</p>
 
       </div>
 
       <div class="lower" fxFlex="50%" fxFlex.sm="50%" fxFlex.xs="100%">
 
         <div class="search-box" fxFlex="80%" fxFlex.sm="80%" fxFlex.xs="80%">
-          <mat-form-field class="mat-form-field"
-                          fxFlex="80%" fxFlex.sm="80%" fxFlex.xs="80%">
+          <mat-form-field class="mat-form-field" fxFlex="80%" fxFlex.sm="80%" fxFlex.xs="80%">
             <mat-label class="mat-label">Search a place name</mat-label>
-            <textarea class="text-area" matInput
-                      placeholder="Ex. Bangladesh..."
-                      [(ngModel)]="cityName">
+            <textarea class="text-area" matInput placeholder="Ex. Bangladesh..." [(ngModel)]="cityName">
           </textarea>
           </mat-form-field>
         </div>
